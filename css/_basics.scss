@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-size: 1em;
+}
+
+.overflow-hd {
+  overflow: hidden;
+}
+
+.en-title {
+  font-family: "Prata", serif;
+}
+
+.kr-title {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.en-sub-title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.en-menu-a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 6em;
+  letter-spacing: 0.05em;
+}
+
+.font-col-w {
+  color: $white;
+}
+
+.font-col-gray {
+  color: $black-con-title;
+}

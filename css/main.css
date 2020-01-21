@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,700|Prata&display=swap");
+@font-face {
+  font-family: "Prata", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,700|Prata&display=swap");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #11151e;
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+.overflow-hd {
+  overflow: hidden;
+}
+
+.en-title {
+  font-family: "Prata", serif;
+}
+
+.kr-title {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.en-sub-title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.en-menu-a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 6em;
+  letter-spacing: 0.05em;
+}
+
+.font-col-w {
+  color: #fff;
+}
+
+.font-col-gray {
+  color: #e3e3ff;
+}
+
+#anchor-nav {
+  position: fixed;
+  z-index: 1000;
+  top: 64px;
+  left: 32px;
+  width: 100%;
+}
+
+#anchor-nav li {
+  display: inline-block;
+  padding: 24px;
+}
+
+#anchor-nav li:hover {
+  background: #4f23ff;
+  border-radius: 100%;
+}
+
+.btn-noti {
+  position: fixed;
+  z-index: 1000;
+  top: 64px;
+  right: 32px;
+  list-style: none;
+  padding: 24px;
+}
+
+.scr-contents {
+  scroll-behavior: smooth;
+}
+
+.top-container {
+  max-width: 62.5em;
+}
+
+.margin-tb-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.margin-lr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vh-100 {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.contents-start {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+
+.rotate-img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.rotate-img-text {
+  -webkit-animation: 12s linear infinite rotate;
+          animation: 12s linear infinite rotate;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.lg-green {
+  width: 240px;
+  height: 240px;
+  border-radius: 24px;
+  margin-left: 500px;
+  background-color: #4f23ff;
+}
+
+.lg-green2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin-left: 400px;
+  background-color: #06121f;
+}
+/*# sourceMappingURL=main.css.map */

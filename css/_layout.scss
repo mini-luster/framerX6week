@@ -1,0 +1,115 @@
+#anchor-nav {
+  position: fixed;
+  z-index: 1000;
+  top: $spacer-5;
+  left: $spacer-4;
+  width: 100%;
+}
+
+#anchor-nav li {
+  display: inline-block;
+  padding: 24px;
+}
+
+#anchor-nav li:hover {
+  background: $color-link;
+  border-radius: 100%;
+}
+
+.btn-noti {
+  position: fixed;
+  z-index: 1000;
+  top: $spacer-5;
+  right: $spacer-4;
+  list-style: none;
+  padding: 24px;
+}
+
+// .noti {
+//   background-color: $point;
+//   border-color: transparent;
+//   border-radius: 60px;
+//   font-size: $spacer-2;
+//   height: $spacer-5;
+//   width: $spacer-6;
+//   color: $white;
+// }
+
+.scr-contents {
+  // overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.top-container {
+  max-width: $container-width-df;
+}
+
+.margin-tb-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.margin-lr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.vh-100 {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.contents-start {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: $white;
+}
+
+// .page {
+//   min-width: 200px;
+//   padding: 64px 64px;
+//   align-items: center;
+//   justify-content: center;
+//   scroll-behavior: smooth;
+//   overflow-y: scroll;
+// }
+// .anchor {
+//   display: block; /*this is important!*/
+// }
+// #page1 {
+//   background: $point;
+//   height: 100vh;
+// }
+// #page2 {
+//   background: $black;
+//   height: 100vh;
+// }
+// #page3 {
+//   background: $point;
+//   height: 100vh;
+// }
+// #page4 {
+//   background: $black;
+//   height: 100vh;
+// }
+// #page5 {
+//   background: $point;
+//   height: 100vh;
+// }
