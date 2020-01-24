@@ -99,6 +99,7 @@ li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .mg-bt {
@@ -117,6 +118,21 @@ li {
 .arrow-ic {
   display: inline-block;
   width: 12px;
+}
+
+.vh-100 {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.vh-50 {
+  height: 50vh;
+  min-height: 420px;
+}
+
+.vh-20 {
+  height: 20vh;
+  min-height: 300px;
 }
 
 @media screen and (min-width: 800px) {
@@ -214,7 +230,6 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #00a6a1;
 }
 
 .inner-section h2 {
@@ -229,7 +244,6 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #11151e;
 }
 
 .inner-section-01 h2 {
@@ -239,6 +253,7 @@ li {
 .image-w {
   width: 360px;
   margin-bottom: 60px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 460px) {
@@ -300,6 +315,13 @@ li {
   }
 }
 
+.wrapper-bg-image {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 80%;
+  padding-bottom: 200px;
+}
+
 .btn-noti {
   position: fixed;
   z-index: 1000;
@@ -349,18 +371,17 @@ li {
           flex-direction: column;
 }
 
-.vh-100 {
-  height: 100vh;
-  min-height: 500px;
+.anim-area-a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
-.vh-20 {
-  height: 20vh;
-  min-height: 300px;
-}
-
-.anim-area {
-  background-color: #11151e;
+.anim-area-b {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -413,19 +434,21 @@ li {
 }
 
 .lg-green {
-  width: 240px;
-  height: 240px;
+  width: 10px;
+  height: 100px;
   border-radius: 24px;
-  margin-left: 500px;
+  margin-left: 28px;
   background-color: #4f23ff;
+  z-index: 0;
 }
 
 .lg-green2 {
-  width: 500px;
-  height: 500px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
-  margin-left: 400px;
+  margin-left: 20px;
   background-color: #06121f;
+  z-index: 0;
 }
 
 .btn-info-pop {
@@ -508,5 +531,17 @@ li {
   text-align: center;
   line-height: 32px;
   cursor: pointer;
+}
+
+.content-bg-type {
+  width: 800px;
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .content-bg-type {
+    width: 320px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
