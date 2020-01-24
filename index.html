@@ -12,45 +12,41 @@
 
   <body>
     <div class="scr-contents">
-      <header>
-        <div id="anchor-nav" class=" en-menu-a ">
-          <ul>
-            <li><a calss="btn-info" href="#popup">Infomation</a></li>
-            <li><a href="#01">01</a></li>
-            <li><a href="#02">02</a></li>
-            <li><a href="#03">03</a></li>
-            <li><a href="#04">04</a></li>
-            <li><a href="#05">05</a></li>
-          </ul>
-        </div>
+      <header class="page__header en-menu-a" role="banner">
+        <li class="page__title ">
+          <a calss="btn-info" href="#popup">Infomation</a>
+        </li>
+      </header>
+
+      <!-- Copyright -->
+      <div class="btn-noti en-menu-a">
+        <li class="font-col-gray">© minhee yoon - 2020</li>
+      </div>
 
       <!-- PopUp -->
-
-        <div class="btn-info-pop" id="popup">
-          <div class="btn-info-pop-up">
-            <div class="btn-info-pop-text font-col-w">
+      <div class="btn-info-pop" id="popup">
+        <div class="btn-info-pop-up">
+          <div class="btn-info-pop-text font-col-w">
             <h1>Hllow!</h1>
-            <p> Frmaer Korea Group에서 진행한 <br>
-              6주간 FramerX로 프로토타입을 만드는 <br>
-              프로젝트에 참여하여 작업한 내용을 <br>
+            <p>
+              Frmaer Korea Group에서 진행한 <br />
+              6주간 FramerX로 프로토타입을 만드는 <br />
+              프로젝트에 참여하여 작업한 내용을 <br />
               아카이빙합니다.
             </p>
-            </div>
-            <a class="btn-info-pop-close" href="#">Close</a>
           </div>
+          <a class="btn-info-pop-close" href="#">Close</a>
         </div>
-
-        <div class="btn-noti en-menu-a">
-          <li class="font-col-gray">© minhee yoon - 2020</li>
-        </div>
-
+      </div>
       <div class="flex flex-column vh-100">
-        <div class="top-container margin-tb-auto margin-lr-auto en-title ">
-          <h1 class="text-center font-col-w " >FramerX</h1>
-          <h1 class="text-center font-col-w " >6Week</h1>
+        <div class="top-container margin-tb-auto margin-lr-auto en-title">
+          <h1 class="text-center font-col-w ">FramerX</h1>
+          <h1 class="text-center font-col-w ">6Week</h1>
           <h1 class="text-center font-col-w">Challenge</h1>
         </div>
+      </div>
 
+      <div class="flex flex-column vh-100">
         <div class="rotate-img margin-tb-auto margin-lr-auto">
           <img class="rotate-img-text" src="asset/rotateimg.svg" />
         </div>
@@ -58,31 +54,84 @@
           <img class="" src="asset/framerxLogo.svg" />
         </div>
 
-      </header>
+        <!-- contents 시작 -->
 
-       
-      <div class="rellax lg-green" data-rellax-speed="1" style="transform: rotate(45deg);"> </div>
-      <div class="rellax lg-green2" data-rellax-speed="7" style="transform: rotate(30deg);"> </div>
-
-
+        <div class="anim-area flex flex-column vh-100">
+          <div
+            class="rellax lg-green"
+            data-rellax-speed="1"
+            style="transform: rotate(45deg);"
+          ></div>
+          <div
+            class="rellax lg-green2"
+            data-rellax-speed="7"
+            style="transform: rotate(30deg);"
+          ></div>
+        </div>
+      </div>
 
       <!-- contents 시작 -->
 
-      <div class="contents-start">
-        <section id="00"> 00 </section>
-        <section id="01"> 01 </section>
-        <section id="02"> 02 </section>
-        <section id="03"> 03 </section>
-        <section id="04"> 04 </section>
-        <section id="05"> 05 </section>
-        <section id="06"> 06 </section>
+      <div class="main">
+        <section class="post__article">
+          <!-- contents 01 -->
+          <section class="inner-section-01">
+            <h2>01</h2>
+            <div class="position-a margin-lr-auto">
+              <img src="https://i.imgur.com/NKfPOQc.png" class="image-w" />
+            </div>
+          </section>
+          <!-- 내용 -->
+          <div class="wrapper-text">
+            <div class="container clearfix">
+              <div class="primary">
+                <h1 class="en-sub-title font-col-w mg-bt">List interation</h1>
+                <a calss="contents-link" href=""
+                  >Go to Github
+                  <object
+                    type="image/svg+xml"
+                    data="asset/arrow_ic.svg"
+                    class="arrow-ic arrow-hover"
+                  >
+                  </object>
+                </a>
+
+                <p class="font-col-w"></p>
+              </div>
+              <div class="secondary">
+                <h1 class="en-sub-title font-col-w mg-bt">Point</h1>
+                <p class="font-col-w ">
+                  반갑습니다 이렇게저렇게 작업을했고 다양하게 하려고했다
+                  이러쿵저러쿵반갑습니다 이렇게저렇게 작업을했고 다양하게
+                  하려고했다 이러쿵저러쿵반갑습니다 이렇게저렇게 작업을했고
+                  다양하게 하려고했다 이러쿵저러쿵반갑습니다 이렇게저렇게
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- contents 02 -->
+          <section class="inner-section">
+            <h2>02</h2>
+          </section>
+          <section class="inner-section">
+            <h2>03</h2>
+          </section>
+          <section class="inner-section">
+            <h2>04</h2>
+          </section>
+          <section class="inner-section">
+            <h2>05</h2>
+          </section>
+          <section class="inner-section">
+            <h2>06</h2>
+          </section>
+        </section>
       </div>
-     
     </div>
 
-   
-  </div>
-
+    <!-- footer -->
+    <footer class="flex flex-column vh-20"></footer>
 
     <!-- javascript -->
 
@@ -94,6 +143,16 @@
           // callback every position change
           console.log(position);
         }
+      });
+    </script>
+    <script type="text/javascript" src="scrollnav.min.umd.js"></script>
+    <script>
+      const content = document.querySelector(".post__article");
+      const insertTarget = document.querySelector(".page__header");
+      scrollnav.init(content, {
+        debug: false,
+        insertTarget: insertTarget,
+        insertLocation: "append"
       });
     </script>
   </body>

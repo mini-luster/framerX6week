@@ -1,20 +1,173 @@
-#anchor-nav {
+// ===================== 👇스크립트 적용 구간👇
+@mixin cf() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.scroll-nav {
+  @media screen and (min-width: 800px) {
+    float: left;
+  }
+
+  @media screen and (max-width: 799px) {
+  }
+}
+
+.scroll-nav__list {
+  @include cf();
+
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+
+  @media screen and (max-width: 920px) {
+  }
+}
+
+.scroll-nav__item {
+  margin-bottom: 5px;
+  float: left;
+  margin-right: 24px;
+  padding: 24px;
+}
+
+.scroll-nav__item:hover {
+  background-color: $point;
+  border-radius: 100%;
+}
+
+.scroll-nav__item--active {
+  font-weight: 600;
+  background-color: $point;
+  border-radius: 100%;
+}
+
+.scroll-nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.page__header {
+  @include cf();
+
   position: fixed;
   z-index: 1000;
   top: $spacer-5;
   left: $spacer-4;
-  width: 100%;
 }
 
-#anchor-nav li {
-  display: inline-block;
+.page__title {
+  margin: 0;
+  margin-right: 24px;
+  color: white;
   padding: 24px;
+  float: left;
+
+  @media screen and (max-width: 799px) {
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 800px) {
+  }
 }
 
-#anchor-nav li:hover {
-  background: $color-link;
-  border-radius: 100%;
+.post__article {
+  @media screen and (min-width: 700px) {
+  }
 }
+
+// ===================== 👆스크립트 적용 구간 👆
+// ===================== 👇섹션스타일 👇
+
+.inner-section {
+  height: 28vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a6a1;
+}
+
+.inner-section h2 {
+  text-align: center;
+}
+
+.inner-section-01 {
+  height: 28vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+}
+
+.inner-section-01 h2 {
+  text-align: center;
+}
+
+.image-w {
+  width: 360px;
+}
+
+// ------------------👇콘텐츠 설명 스타일👇
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper-text {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 55%;
+  min-width: 30%;
+  padding-bottom: 200px;
+}
+
+.secondary {
+  padding-top: 60px;
+  line-height: 1.5em;
+}
+
+.ic-size {
+  width: 0.8em;
+}
+
+@media all and (min-width: 1200px) {
+  .wrapper-text {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 35%;
+    padding-bottom: 200px;
+  }
+
+  .container {
+    padding-right: 400px;
+  }
+
+  .primary {
+    float: left;
+    padding-right: 24px;
+  }
+
+  .secondary {
+    float: right;
+    margin-right: -400px;
+    width: 400px;
+    padding-top: 120px;
+  }
+}
+
+// ------------------👆콘텐츠 설명 스타일  👆
+
+// ===================== 👆섹션스타일 👆
 
 .btn-noti {
   position: fixed;
@@ -23,11 +176,6 @@
   right: $spacer-4;
   list-style: none;
   padding: 24px;
-}
-
-.scr-contents {
-  // overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .top-container {
@@ -57,17 +205,13 @@
   min-height: 500px;
 }
 
-.contents-start {
-  display: block;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
+.vh-20 {
+  height: 20vh;
+  min-height: 300px;
 }
 
-section {
-  display: flex;
+.anim-area {
+  background-color: $black;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  color: $white;
 }

@@ -32,6 +32,10 @@ a {
   font-size: 1em;
 }
 
+li {
+  list-style: none;
+}
+
 .overflow-hd {
   overflow: hidden;
 }
@@ -64,4 +68,32 @@ a {
 
 .font-col-gray {
   color: $black-con-title;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mg-bt {
+  margin-bottom: $spacer-2;
+}
+
+.primary a:hover {
+  color: $link-point;
+
+  .arrow-hover {
+    filter: invert(36%) sepia(97%) saturate(7500%) hue-rotate(252deg)
+      brightness(95%) contrast(114%);
+  }
+}
+
+.arrow-ic {
+  display: inline-block;
+  width: 12px;
 }
