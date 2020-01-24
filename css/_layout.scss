@@ -25,6 +25,7 @@
   display: inline-block;
 
   @media screen and (max-width: 920px) {
+    display: none;
   }
 }
 
@@ -36,6 +37,11 @@
 }
 
 .scroll-nav__item:hover {
+  background-color: $point;
+  border-radius: 100%;
+}
+
+.page__title:hover {
   background-color: $point;
   border-radius: 100%;
 }
@@ -58,6 +64,11 @@
   z-index: 1000;
   top: $spacer-5;
   left: $spacer-4;
+
+  @media screen and (max-width: 460px) {
+    top: $spacer-4;
+    left: $spacer-2;
+  }
 }
 
 .page__title {
@@ -107,6 +118,12 @@
 
 .image-w {
   width: 360px;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 460px) {
+    width: 300px;
+    margin-bottom: 160px;
+  }
 }
 
 // ------------------👇콘텐츠 설명 스타일👇
@@ -176,6 +193,15 @@
   right: $spacer-4;
   list-style: none;
   padding: 24px;
+
+  @media screen and (max-width: 460px) {
+    top: $spacer-4;
+    right: $spacer-2;
+  }
+
+  @media screen and (max-width: 799px) {
+    padding: 12px;
+  }
 }
 
 .top-container {
@@ -214,4 +240,5 @@
   background-color: $black;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
