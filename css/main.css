@@ -290,8 +290,8 @@ li {
 
 @media screen and (max-width: 460px) {
   .image-w {
-    width: 290px;
-    margin-bottom: 160px;
+    width: 272px;
+    margin-bottom: 180px;
   }
 }
 
@@ -642,7 +642,13 @@ li {
 .rotate-img-text {
   -webkit-animation: 12s linear infinite rotate;
           animation: 12s linear infinite rotate;
-  width: 350px;
+  width: 520px;
+}
+
+@media screen and (max-width: 420px) {
+  .rotate-img-text {
+    width: 300px;
+  }
 }
 
 @-webkit-keyframes rotate {
