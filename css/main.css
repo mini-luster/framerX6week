@@ -40,6 +40,14 @@ a {
   font-size: 1em;
 }
 
+p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.9em;
+  letter-spacing: 0.02em;
+}
+
 li {
   list-style: none;
 }
@@ -65,6 +73,11 @@ li {
   font-size: 32px;
   margin-bottom: 8px;
   text-transform: uppercase;
+}
+
+.font-s-24 {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 .text-center {
@@ -107,6 +120,10 @@ li {
 
 .position-a {
   position: absolute;
+}
+
+.position-a-center {
+  position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -118,12 +135,12 @@ li {
 }
 
 .primary a:hover {
-  color: #5f19cf;
+  color: #888afa;
 }
 
 .primary a:hover .arrow-hover {
-  -webkit-filter: invert(36%) sepia(97%) saturate(7500%) hue-rotate(252deg) brightness(95%) contrast(114%);
-          filter: invert(36%) sepia(97%) saturate(7500%) hue-rotate(252deg) brightness(95%) contrast(114%);
+  -webkit-filter: invert(18%) sepia(59%) saturate(4376%) hue-rotate(205deg) brightness(95%) contrast(101%);
+          filter: invert(18%) sepia(59%) saturate(4376%) hue-rotate(205deg) brightness(95%) contrast(101%);
 }
 
 .arrow-ic {
@@ -442,6 +459,8 @@ li {
 }
 
 .btn-info-pop-text {
+  width: 52%;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -450,19 +469,113 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+}
+
+@media screen and (max-width: 936px) {
+  .btn-info-pop-text {
+    width: 100%;
+    height: 50%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn-info-pop-text {
+    padding: 2rem;
+  }
 }
 
 .btn-info-pop-text h1 {
   font-family: "Prata", serif;
   font-size: 32px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 
 .btn-info-pop-text p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+.btn-info-pop-text .top-32 {
+  margin-top: 42px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-info-pop-text a {
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.btn-info-pop-text a:hover {
+  color: #888afa;
+  font-weight: 400;
+}
+
+.btn-info-pop-text-link {
+  width: 40%;
+  height: 100%;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 936px) {
+  .btn-info-pop-text-link {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn-info-pop-text-link {
+    padding: 2rem;
+  }
+}
+
+.btn-info-pop-text-link h1 {
+  font-family: "Prata", serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.btn-info-pop-text-link a {
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  font-weight: 100;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.btn-info-pop-text-link a:hover {
+  color: #888afa;
+  font-weight: 600;
+}
+
+.btn-info-pop-text-link a:hover .arrow-hover {
+  -webkit-filter: invert(18%) sepia(59%) saturate(4376%) hue-rotate(205deg) brightness(95%) contrast(101%);
+          filter: invert(18%) sepia(59%) saturate(4376%) hue-rotate(205deg) brightness(95%) contrast(101%);
 }
 
 .btn-info-pop:target {
@@ -475,13 +588,22 @@ li {
   right: 32px;
   top: 32px;
   width: 120px;
-  height: 32px;
+  height: 58px;
   border-radius: 100%;
   background-color: #06121f;
   z-index: 10;
   text-align: center;
-  line-height: 32px;
+  line-height: 64px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 936px) {
+  .btn-info-pop-close {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    line-height: 70px;
+  }
 }
 
 .rotate-img {

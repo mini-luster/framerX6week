@@ -35,6 +35,14 @@ a {
   font-size: 1em;
 }
 
+p {
+  text-decoration: none;
+  color: $white;
+  font-size: $spacer-2;
+  line-height: 1.9em;
+  letter-spacing: 0.02em;
+}
+
 li {
   list-style: none;
 }
@@ -69,6 +77,11 @@ li {
   font-size: $spacer-4;
   margin-bottom: $spacer-1;
   text-transform: uppercase;
+}
+
+.font-s-24 {
+  font-size: $spacer-3;
+  margin-bottom: $spacer-1;
 }
 
 // +++👆 폰트 사이즈 👆
@@ -118,6 +131,10 @@ li {
 
 .position-a {
   position: absolute;
+}
+
+.position-a-center {
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -134,8 +151,8 @@ li {
   color: $link-point;
 
   .arrow-hover {
-    filter: invert(36%) sepia(97%) saturate(7500%) hue-rotate(252deg)
-      brightness(95%) contrast(114%);
+    filter: invert(18%) sepia(59%) saturate(4376%) hue-rotate(205deg)
+      brightness(95%) contrast(101%);
   }
 }
 
