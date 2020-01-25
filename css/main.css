@@ -163,6 +163,10 @@ li {
   min-height: 300px;
 }
 
+.vh-05 {
+  height: 5vh;
+}
+
 @media screen and (min-width: 800px) {
   .scroll-nav {
     float: left;
