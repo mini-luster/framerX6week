@@ -1,3 +1,6 @@
+// ===================== 👇기본셋팅 👇
+// ===================== 👇기본 스타일 리셋+변형 👇
+
 html,
 body {
   margin: 0;
@@ -36,9 +39,11 @@ li {
   list-style: none;
 }
 
-.overflow-hd {
-  overflow: hidden;
-}
+// ===================== 👆기본 스타일 리셋+변형 👆
+// ===================== 👆기본셋팅 👆
+
+// ===================== 👇 폰트스타일 기본셋팅 👇
+// +++👇 폰트 선택 👇
 
 .en-title {
   font-family: "Prata", serif;
@@ -56,6 +61,19 @@ li {
   font-family: "Open Sans", sans-serif;
 }
 
+// +++👆 폰트 선택 👆
+// +++👇 폰트 사이즈 👇
+
+.font-s-32 {
+  font-family: $en-title-big;
+  font-size: $spacer-4;
+  margin-bottom: $spacer-1;
+  text-transform: uppercase;
+}
+
+// +++👆 폰트 사이즈 👆
+// +++👇 폰트 포지션 👇
+
 .text-center {
   text-align: center;
   font-size: 6em;
@@ -66,16 +84,32 @@ li {
   }
 
   @media screen and (max-width: 460px) {
-    font-size: 3.5em;
+    font-size: 3.2em;
   }
 }
+
+// +++👆 폰트 포지션 👆
+// +++👇 폰트 컬러 👇
 
 .font-col-w {
   color: $white;
 }
 
+.font-col-point {
+  color: $black-con-title;
+}
+
 .font-col-gray {
   color: $black-con-title;
+}
+
+// +++👆 폰트 컬러 👆
+
+// ===================== 👆 폰트스타일 기본셋팅 👆
+// ===================== 👇 컨테이너 & 내부 포지션 셋팅 👇
+
+.overflow-hd {
+  overflow: hidden;
 }
 
 .position-r {
@@ -93,6 +127,9 @@ li {
   margin-bottom: $spacer-2;
 }
 
+// ===================== 👆 컨테이너 & 내부 포지션 셋팅 👆
+// ===================== 👇link & icon hover👇
+
 .primary a:hover {
   color: $link-point;
 
@@ -106,7 +143,7 @@ li {
   display: inline-block;
   width: 12px;
 }
-
+// ===================== 👆link & icon hover👆
 // ===================== 👇컨테이너 높이 👇
 
 .vh-100 {

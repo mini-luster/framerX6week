@@ -1,4 +1,5 @@
 // ===================== 👇스크립트 적용 구간👇
+// ===================== 👇스크립트 적용 구간👇
 @mixin cf() {
   &:after {
     content: "";
@@ -66,7 +67,7 @@
   left: $spacer-4;
 
   @media screen and (max-width: 460px) {
-    top: $spacer-4;
+    top: $spacer-2;
     left: $spacer-2;
   }
 }
@@ -91,6 +92,7 @@
   }
 }
 
+// ===================== 👆스크립트 적용 구간 👆
 // ===================== 👆스크립트 적용 구간 👆
 // ===================== 👇섹션스타일 👇
 
@@ -120,11 +122,11 @@
   z-index: 2;
 
   @media screen and (max-width: 460px) {
-    width: 300px;
+    width: 290px;
     margin-bottom: 160px;
   }
 }
-
+// ===================== 👆섹션스타일👆
 // +++------------------👇콘텐츠 설명 스타일👇
 
 *,
@@ -142,7 +144,7 @@
 .wrapper-text {
   margin: 0 auto;
   padding: 10px;
-  max-width: 55%;
+  max-width: 72%;
   min-width: 30%;
   padding-bottom: 200px;
 }
@@ -203,7 +205,7 @@
   padding: 24px;
 
   @media screen and (max-width: 460px) {
-    top: $spacer-4;
+    top: $spacer-2;
     right: $spacer-2;
   }
 

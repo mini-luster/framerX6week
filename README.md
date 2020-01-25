@@ -1,7 +1,5 @@
 # framerX6week
 
-## framerX 6week Challenge 작업 아카이빙
-
 #### Introduction
 
 - 해당 사이트는 6주간 진행한 프레이머작업물을 아카이빙하는 용도입니다.

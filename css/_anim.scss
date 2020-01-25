@@ -1,3 +1,81 @@
+// ===================== 👇PopUp👇
+
+.btn-info-pop {
+  background-color: $black-point;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.64s ease-in-out;
+
+  &-up {
+    position: relative;
+
+    background-color: $point;
+
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+
+    max-width: 800px;
+    min-width: 320px;
+    width: 80%;
+    height: 90%;
+  }
+
+  &-text {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+
+    h1 {
+      font-family: $en-title-big;
+      font-size: $spacer-4;
+      margin-bottom: $spacer-1;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $kr-copy;
+      font-size: $spacer-2;
+      line-height: 1.8;
+    }
+  }
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &-close {
+    position: absolute;
+    right: $spacer-4;
+    top: $spacer-4;
+
+    width: $spacer-6;
+    height: $spacer-4;
+    border-radius: 100%;
+
+    background-color: $black-point;
+    z-index: 10;
+    text-align: center;
+    line-height: $spacer-4;
+    cursor: pointer;
+  }
+}
+
+// ===================== 👆PopUp👆
+// ===================== 👇애니메이션 A👇
+
 .rotate-img {
   position: absolute;
   top: 100%;
@@ -41,80 +119,7 @@
   z-index: 0;
 }
 
-// PopUp 등장
-
-.btn-info-pop {
-  background-color: $point;
-  opacity: 0.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-
-  width: 100vw;
-  height: 100vh;
-
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  transition: 0.64s ease-in-out;
-
-  &-up {
-    position: relative;
-
-    background-color: $black;
-
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-
-    max-width: 1000px;
-    max-width: 1000px;
-    width: 60%;
-    height: 80%;
-  }
-
-  &-text {
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem;
-
-    h1 {
-      font-family: $en-title-big;
-      font-size: $spacer-4;
-      margin-bottom: $spacer-1;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-family: $kr-copy;
-      font-size: $spacer-2;
-      line-height: 1.8;
-    }
-  }
-
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  &-close {
-    position: absolute;
-    right: $spacer-4;
-    top: $spacer-4;
-
-    width: $spacer-6;
-    height: $spacer-4;
-    border-radius: 100%;
-
-    background-color: $point;
-    z-index: 10;
-    text-align: center;
-    line-height: $spacer-4;
-    cursor: pointer;
-  }
-}
+// ===================== 👆애니메이션 A👆
 
 // 잠깐 테스트
 .content-bg-type {
