@@ -56,12 +56,19 @@
       font-size: $spacer-4;
       margin-bottom: $spacer-2;
       letter-spacing: 0.02em;
+
+      @media screen and (max-width: 420px) {
+        font-size: $spacer-3;
+      }
     }
 
     p {
       font-size: 18px;
       line-height: 1.8em;
       font-weight: 300;
+      @media screen and (max-width: 420px) {
+        font-size: $spacer-2;
+      }
     }
 
     .top-32 {
@@ -149,11 +156,16 @@
     cursor: pointer;
 
     @media screen and (max-width: 936px) {
-      width: $spacer-5;
-      height: $spacer-5;
+      right: $spacer-2;
+      top: $spacer-2;
+
+      width: $spacer-4-5;
+      height: $spacer-4-5;
       border-radius: 100%;
 
-      line-height: 70px;
+      line-height: 60px;
+
+      font-size: 14px;
     }
   }
 }

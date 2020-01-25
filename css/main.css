@@ -496,10 +496,22 @@ li {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 420px) {
+  .btn-info-pop-text h1 {
+    font-size: 24px;
+  }
+}
+
 .btn-info-pop-text p {
   font-size: 18px;
   line-height: 1.8em;
   font-weight: 300;
+}
+
+@media screen and (max-width: 420px) {
+  .btn-info-pop-text p {
+    font-size: 16px;
+  }
 }
 
 .btn-info-pop-text .top-32 {
@@ -599,10 +611,13 @@ li {
 
 @media screen and (max-width: 936px) {
   .btn-info-pop-close {
-    width: 64px;
-    height: 64px;
+    right: 16px;
+    top: 16px;
+    width: 58px;
+    height: 58px;
     border-radius: 100%;
-    line-height: 70px;
+    line-height: 60px;
+    font-size: 14px;
   }
 }
 
