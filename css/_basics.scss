@@ -54,7 +54,7 @@ li {
 // +++👇 폰트 선택 👇
 
 .en-title {
-  font-family: "Prata", serif;
+  font-family: $en-title-big;
 }
 
 .kr-title {
@@ -62,6 +62,15 @@ li {
 }
 
 .en-sub-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.kr-sub-copy {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.en-sub-copy {
   font-family: "Open Sans", sans-serif;
 }
 

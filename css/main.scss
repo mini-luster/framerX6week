@@ -21,13 +21,12 @@ $color-link: $point !default;
 // --------------------------------------------------
 // --------------------------------------------------
 // font
-
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,700|Prata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400|Open+Sans:300,400,600,700|Prata&display=swap&subset=korean");
 @font-face {
   font-family: "Prata", serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Noto Sans KR", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Open+Sans:400,700|Prata&display=swap");
+  src: url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400|Open+Sans:300,400|Playfair+Display&display=swap");
 }
 
 //Typo
