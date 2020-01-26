@@ -490,6 +490,7 @@ li {
 @media screen and (max-width: 420px) {
   .btn-info-pop-text {
     padding: 2rem;
+    top: 12%;
   }
 }
 
@@ -503,6 +504,7 @@ li {
 @media screen and (max-width: 420px) {
   .btn-info-pop-text h1 {
     font-size: 24px;
+    margin-bottom: 12px;
   }
 }
 
@@ -514,14 +516,21 @@ li {
 
 @media screen and (max-width: 420px) {
   .btn-info-pop-text p {
+    line-height: 1.5em;
     font-size: 16px;
   }
 }
 
 .btn-info-pop-text .top-32 {
-  margin-top: 42px;
+  margin-top: 32px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.btn-info-pop-text .top-12 {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 .btn-info-pop-text a {
