@@ -176,6 +176,12 @@ li {
   height: 5vh;
 }
 
+@media screen and (max-width: 380px) {
+  .vh-05 {
+    height: 8vh;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .scroll-nav {
     float: left;

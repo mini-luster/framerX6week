@@ -189,5 +189,9 @@ li {
 
 .vh-05 {
   height: 5vh;
+
+  @media screen and (max-width: 380px) {
+    height: 8vh;
+  }
 }
 // ===================== 👆컨테이너 높이👆
